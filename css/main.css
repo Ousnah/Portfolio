@@ -153,9 +153,7 @@ p img {
 	margin: 0;
 }
 p.lead {
-	font-family: "lora-regular", serif;
 	font-size: 2rem;
-	line-height: 1.8;
 	color: #888888;
 }
 @media only screen and (max-width:768px) {
@@ -942,7 +940,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: #7d7d7d;
 }
 .section-intro {
-	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -1172,6 +1169,10 @@ header .top-bar {
 	}
 }
 
+.project1, .project2, .project3{
+	padding: 0px 20px;
+}
+
 #intro {
 	background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 	-webkit-background-size: cover;
@@ -1226,7 +1227,6 @@ header .top-bar {
 	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 .intro-content .intro-position {
-	font-family: "lora-regular", serif;
 	font-size: 1.7rem;
 	line-height: 2.4rem;
 	text-transform: uppercase;
@@ -1388,8 +1388,8 @@ header .top-bar {
 }
 .intro-info img {
 	object-fit: cover;
-	height: 12rem;
-	width: 12rem;
+	height: 19rem;
+	width: 19rem;
 	border-radius: 50%;
 	margin: -2.1rem 0px 0 0;
 	float: left;
@@ -1402,7 +1402,9 @@ header .top-bar {
 .about-content {
 	position: relative;
 	text-align: center;
-	max-width: 850px;
+	display: flex;
+	justify-content: center;
+	max-width: 857px;
 	margin-bottom: 3.6rem;
 }
 .about-content h3 {
@@ -1997,7 +1999,11 @@ header .top-bar {
 	background: #151515;
 	opacity: .9;
 }
-
+.projects{
+	justify-content: center;
+	flex-wrap: wrap;
+	display: flex;
+}
 #services .section-intro {
 	margin-bottom: 1.8rem;
 }
